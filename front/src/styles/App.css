@@ -1,0 +1,244 @@
+body{
+  text-align: center;
+  color:white ;
+  background-color: black;
+}
+
+
+.ErrorPageDiv{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+/* modal */
+.container-modal{
+  width: 60vw;
+  background-color: red;
+  display: flex;
+  position: absolute;
+  margin-top:40vh;
+}
+.modal-overlay {
+  /* position: fixed; */
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+
+}
+
+.custom-modal .modal-content {
+  background-color: rgba(255, 255, 255, 0.078);
+  backdrop-filter: blur(10px); 
+  border-radius: 15px; 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); 
+  color: white; 
+}
+
+.custom-modal .modal-header,
+.custom-modal .modal-footer {
+  border: none; 
+}
+
+.custom-modal .form-control {
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.custom-modal .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+button.btn-primary {
+  background-color: #6200ea;
+  border: none;
+}
+
+button.btn-primary:hover {
+  background-color: #4500b5;
+}
+
+button.btn-secondary {
+  background-color: #333;
+  border: none;
+}
+
+button.btn-secondary:hover {
+  background-color: #444;
+}
+.custom-modal .form-control::placeholder {
+  color: white;
+  opacity: 1; 
+}
+
+
+
+/* tabla */
+ .admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.078);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table thead {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: left;
+}
+
+.admin-table thead th {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.admin-table tbody tr {
+  transition: background-color 0.3s;
+}
+
+.admin-table tbody tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.admin-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-table tbody td {
+  padding: 12px;
+  font-size: 14px;
+  color: #f5f5f5;
+}
+
+.admin-table tbody td span {
+  cursor: pointer;
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.admin-table tbody td span:hover {
+  color: #0a58ca;
+}
+
+.admin-table .btn-danger {
+  background-color: #dc3545;
+  border: none;
+  padding-left:15px;
+  font-size: 12px;
+}
+
+.admin-table .btn-danger:hover {
+  background-color: #b02a37;
+}
+
+@media (max-width: 768px) {
+  .admin-table thead th,
+  .admin-table tbody td {
+    font-size: 12px;
+  }
+}
+
+
+
+
+ /* paginacion */
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.078);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pagination button {
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:disabled {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.pagination span {
+  font-size: 14px;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+
+
+
+/* juego  */
+
+.bodyPreguntas {
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+
+.bodyPreguntas h2 {
+  padding-top: 15px;
+  flex-basis: 100%; 
+} 
+
+.opcion {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  /* background-color: #f0f0f0; */
+  /* color: #333; */
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.opcion:hover {
+  border-color: #ccc;
+}
+
+.opcion.seleccionada {
+  border-color: white;
+  background-color:  rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+
+.w-ft-10 {
+  width: 20% !important;
+}
+
+@media (min-width: 768px) {
+  .w-ft-md-25 {
+    width: 35% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .w-ft-lg-50 {
+    width: 100% !important;
+  }
+}
